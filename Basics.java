@@ -6,4 +6,4 @@ public class Basics {
     }
 }
 
-// Output: Hello, World!s
+// Output: Hello, World!
