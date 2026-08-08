@@ -21,5 +21,12 @@ public class Variables {
          System.out.println("Days in a week: " + DAYS_IN_WEEK);
 
          // output: Days in a week: 7
+
+
+         // Error Case :
+         int number;
+        //  System.out.println("Number: " + number);ss
+        //  output: Error: variable number might not have been initialized
+        
     }
 }
