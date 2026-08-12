@@ -79,6 +79,19 @@ public class Operators {
         System.out.println("Value of x after post decrement: " + x--); // 6
 
 
+        // Ternary Operator
+        int score = 85;
+        String result = (score >= 50) ? "Pass" : "Fail";
+        System.out.println("Result: " + result); // Result: Pass
+
+
+        //Instanceof Operator
+        String name = "John Doe";
+        System.out.println(name instanceof String); // true
+
+       
+
+
         
     }
 }

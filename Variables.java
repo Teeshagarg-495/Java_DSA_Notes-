@@ -25,7 +25,7 @@ public class Variables {
 
          // Error Case :
          int number;
-        //  System.out.println("Number: " + number);ss
+        //  System.out.println("Number: " + number);
         //  output: Error: variable number might not have been initialized
         
     }
