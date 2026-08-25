@@ -120,5 +120,48 @@ public class Conditionals {
         }
 
         // Output : You are eligible for the men's category.
+
+
+        // Ternary Operator
+        int streakDays = 5;
+
+        String status = (streakDays >=7)? ("Consistent") :("Irregular");
+        System.out.println("Your streak status is: " + status);
+
+        // Output : Your streak status is: Irregular
+
+
+
+        // Switch Statement
+        int dayOfWeek = 3;
+        switch(dayOfWeek){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day!");
+        }
+
+        // default case is optional in switch statement. If none of the cases match, then no output will be printed.
+
+        // Output : Wednesday
     }
 }
