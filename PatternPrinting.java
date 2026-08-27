@@ -41,5 +41,43 @@ public class PatternPrinting {
         // Output will be a solid right-angled triangle pattern of stars with 5 rows.
 
         System.out.println();
+
+
+        // Pattern 4 : Solid Rhombus Pattern
+
+        
+        // rows 
+        for (int i = 1 ; i<=5 ; i++){
+            // spaces 
+            for (int j = 1; j <= 5-i ; j++){
+                System.out.print("  ");
+            }
+
+            // stars 
+
+            for (int j = 1 ; j<= 5 ; j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+
+        // Output will be a solid rhombus pattern of stars with 5 rows.
+
+        System.out.println();
+
+
+        // Inverted right-angle triangle pattern
+
+        // rows 
+        for (int i = 0 ; i < 5 ; i++){
+
+            // stars 
+
+            for(int j = 1 ; j <= 5-i ; j++ ){
+                  System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
