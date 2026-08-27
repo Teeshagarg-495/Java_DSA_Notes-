@@ -67,7 +67,7 @@ public class PatternPrinting {
         System.out.println();
 
 
-        // Inverted right-angle triangle pattern
+        // Pattern 5 : Inverted right-angle triangle pattern
 
         // rows 
         for (int i = 0 ; i < 5 ; i++){
@@ -79,5 +79,6 @@ public class PatternPrinting {
             }
             System.out.println();
         }
+
     }
 }
