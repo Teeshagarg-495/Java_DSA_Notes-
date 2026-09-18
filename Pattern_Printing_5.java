@@ -78,6 +78,48 @@ public class Pattern_Printing_5 {
             System.out.println();
         }
 
+        // Pattern 5 :
+
+        for (int i = 1 ; i<= 4 ; i++){
+          for (int j = 1 ; j <= 4-i ; j++){
+              System.out.print("  ");
+            }
+
+            for (int j = 1 ; j <=i ; j++){
+                System.out.print(j + " ");
+            }
+
+
+            for (int j = i-1 ; j >= 1 ; j--){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+
+        // Pattern 6 :
+        for (int i = 1 ; i<=4 ; i++){
+            for (int j = 4; j >= 1  ; j--){
+                if (j <= i){
+                    System.out.print(i + 
+                    " ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+
+
+            }
+
+            for (int j = 1 ; j <= i-1 ; j++){
+                System.out.print(i + " ");
+            }
+
+            System.out.println();
+        }
+
 
 
     }
