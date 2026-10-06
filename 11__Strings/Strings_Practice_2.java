@@ -34,6 +34,7 @@ public class Strings_Practice_2 {
 
     static String convertToUpperCase( String str){
 
+        // we are using stringbuilder because new string result would have taken more space in memory if we use string concatenation. Stringbuilder is mutable and takes less space in memory.
         StringBuilder upperCaseString = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {
