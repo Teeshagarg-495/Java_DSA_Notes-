@@ -34,6 +34,18 @@ public class Strings_Practice_2 {
 
     static String convertToUpperCase( String str){
 
-        
+        StringBuilder upperCaseString = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c >= 'a' && c <= 'z') {
+                c = (char) (c -32); // Convert to uppercase
+            }
+            upperCaseString.append(c);
+        }
+
+        return upperCaseString.toString();
+
+
     }
 }
