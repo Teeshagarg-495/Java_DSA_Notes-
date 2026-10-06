@@ -119,6 +119,19 @@ public class CommonStringMethods {
             System.out.print(strArray[i] + " , ");
         }
 
+        String[] strArray1 = name20.split(" ", 3); // here we are splitting the string based on space. so the delimiter is space. and we are limiting the number of substrings to 3.
+        System.out.println("\nSplitting string into an array of strings using .split() method with limit: ");
+        for (int i = 0; i < strArray1.length; i++) {
+            System.out.print(strArray1[i] + " , ");
+        }
+
+
+        //replace() method is used to replace the specified character or substring with the specified character or substring. it will return a new string which is the modified string.
+        String name21 = "My Name is Teesha Garg";
+        System.out.println("\nReplacing the specified character or substring with the specified character or substring using .replace() method: ");
+        System.out.println("Replacing 'Teesha' with 'Tee': " + name21.replace("Teesha", "Tee")); // "My Name is Tee Garg"
+    
+
         
 
     }
