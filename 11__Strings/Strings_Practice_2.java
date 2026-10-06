@@ -6,6 +6,12 @@ public class Strings_Practice_2 {
         String str = "Teesha Garg";
         int consonantCount = countConsonants(str);
         System.out.println("Number of consonants in the string: " + consonantCount);
+
+        //Q2. Convert string to uppercase without using method
+
+        String str2 = "Teesha Garg";
+        String upperCaseString = convertToUpperCase(str2);
+        System.out.println("Uppercase string: " + upperCaseString);
     }
 
 
