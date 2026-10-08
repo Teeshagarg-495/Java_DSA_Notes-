@@ -12,6 +12,39 @@ public class Strings_Practice_2 {
         String str2 = "Teesha Garg";
         String upperCaseString = convertToUpperCase(str2);
         System.out.println("Uppercase string: " + upperCaseString);
+
+
+        //Q3. find frequency of a character in a string
+
+        String str3 = "Teesha Garg";
+        char ch = 'a';
+        int frequency = findFrequency(str3, ch);
+        System.out.println("Frequency of character '" + ch + "' in the string: " + frequency);
+
+
+        //Q4 . Remove all spaces from a string
+
+        String str4 = "Teesha    Garg";
+        String stringWithoutSpaces = removeSpaces(str4);
+        System.out.println("String without spaces: " + stringWithoutSpaces);
+
+
+        //Q5. check if string contains only digits
+
+        String str5 = "123456acb";
+        boolean onlyDigits = containsOnlyDigits(str5);
+        if (onlyDigits) {
+            System.out.println("The string contains only digits.");
+        } else {
+            System.out.println("The string does not contain only digits.");
+        }
+
+
+        //Q6. Count words in a sentence
+        String str6 = "This is a sample sentence.";
+        int wordCount = countWords(str6);
+        System.out.println("Number of words in the sentence: " + wordCount);
+
     }
 
 
@@ -52,7 +85,79 @@ public class Strings_Practice_2 {
         }
 
         return upperCaseString.toString();
+    }
 
 
+    //Q3. find frequency of a character in a string
+
+    static int findFrequency(String str, char ch){
+
+        int count =0 ;
+        for (int i =0 ; i <str.length() ; i++){
+
+            char c = str.charAt(i);
+
+            if (c == ch){
+                count ++;
+            }
+        }
+        return count ;
+    }
+
+
+    //Q4 . Remove all spaces from a string
+
+    static String removeSpaces(String str){
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i =0 ; i < str.length() ; i++){
+
+            char c = str.charAt(i);
+
+            if(c != ' '){
+                result.append(c);
+            }
+
+            
+        }
+        return result.toString();
+    }
+
+
+    // Q5. check if string contains only digits
+
+    static boolean containsOnlyDigits(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c < '0' || c > '9') {
+                return false; // Found a non-digit character
+            }
+        }
+        return true; // All characters are digits
+    }
+
+
+    // Q6. Count words in a sentence
+
+    static int countWords(String sentence) {
+
+        int count =0 ;
+
+        sentence = sentence.trim(); // Remove leading and trailing spaces
+
+        if (sentence.isEmpty()) {
+            return 0; // No words in an empty string
+        }
+
+        for (int i = 0; i < sentence.length(); i++) {
+            char c = sentence.charAt(i);
+            if (c == ' ') {
+                count++;
+            }
+        }
+
+        return count + 1; // Add 1 to count the last word
+       
     }
 }
