@@ -4,7 +4,7 @@ public class Encapsulation {
 
     public int id;
     public String name;
-    public int age;
+    private int age;
     public int nos;
     private String gf; // private attribute
 
@@ -47,6 +47,22 @@ public class Encapsulation {
     public String setGF(String gfname){
             this.gf = gfname ;
             return gf;
+    }
+
+
+    //getter for age 
+    public int getAge(){
+        return age;
+    }
+
+    //setter for age 
+    public int setAge(int age){
+
+        //extra layer of authentication
+        if (age <100){
+            this.age = age;
+        }
+        return age;
     }
 
 
