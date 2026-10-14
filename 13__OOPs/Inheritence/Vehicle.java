@@ -16,7 +16,16 @@ public class Vehicle {
     }
 
 
-    
+    // Attributes 
+
+    public void startEngine(){
+        System.out.println("Engine is starting of : " + name + " , " + model);
+    }
+
+
+    public void stopEngine(){
+        
+    }
 
     
 }
